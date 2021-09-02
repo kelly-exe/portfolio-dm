@@ -11,13 +11,12 @@
 .icons {
   backdrop-filter: blur(10px);
   display: grid;
-  margin-left: 40%;
+  margin-left: 30%;
   padding: 0 0.5% 0 0;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: span 5;
-  text-align: right;
   background-color: rgba(255, 21, 138, 0.267);
   border-radius: 50px 0 0 50px;
   filter: drop-shadow(-7px 8px 8px rgb(189, 120, 154));
@@ -26,19 +25,19 @@
   z-index: 2;
 }
 .icons p {
-  filter: drop-shadow(-4px 3px 4px rgb(70, 20, 47));
+  filter: drop-shadow(2px 1px 4px rgb(70, 20, 47));
   color: white;
   place-self: center;
-  font-size: 2em;
+  font-size: 1.7em;
   text-align: center;
-  padding: 0 10px 0 20px;
+  padding: 10% 10%;
   margin: 0;
   height: fit-content;
 }
 
 .icons p:hover {
   color: rgba(92, 20, 65, 0.658);
-  filter: drop-shadow(-5px 3px 4px rgb(255, 231, 243));
+  filter: drop-shadow(-5px 1px 4px rgb(255, 231, 243));
   transition-duration: 500ms;
 }
 
@@ -46,7 +45,7 @@
   position: absolute;
   top: 60px;
   display: grid;
-  grid-template-columns: .5fr 2fr .25fr 2fr .25fr;
+  grid-template-columns: 0.5fr 2fr 0.25fr 2fr 0.25fr;
   grid-template-rows: repeat(8, 1fr);
 
   width: 100%;
@@ -59,6 +58,8 @@
   grid-column-end: span 3;
   grid-row-start: 2;
   grid-row-end: span 5;
+  color: rgb(70 20 47);
+  text-shadow: -1px -2px #b58dab91;
   backdrop-filter: blur(7px);
   border-radius: 0 70px 70px 0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -67,17 +68,68 @@
 }
 
 .content h1 {
-  line-height: 2.2em;
   padding-left: 2%;
   font-size: 2em;
   text-align: left;
   width: 100%;
   margin-bottom: 0;
+  color: rgb(70 20 47);
+  text-shadow: -2px -2px #b58dab91;
 }
 
 .content p {
-  padding-left: 3%;
+  padding: 0 3% 0 3%;
   font-size: 1em;
   text-align: left;
   margin-top: 0;
+}
+
+@media screen and (max-width: 630px) {
+  .homeBase {
+    grid-template-columns: 0.25fr 2.125fr 0.25fr 2.125fr 0.25fr;
+    top: 100px;
+  }
+  .content {
+    border-radius: 0 0 50px 50px;
+  }
+  .content h1 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0;
+  }
+  .content p {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+  .icons {
+    top: 100px;
+    justify-content: space-around;
+    border-radius: 30px 30px 0 0;
+    margin: 2% 5% 0 0;
+    display: inline-flex;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    box-shadow: rgb(162 99 129) 3px 0px 6px 0px inset,
+      rgb(105 67 83 / 22%) -3px 0px 6px 1px inset;
+  }
+  .icons p {
+    padding: 0;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (min-width: 1700px){
+  .content h1 {
+    font-size: 3em;
+  }
+  .content p {
+    font-size: 2em;
+  }
+  .icons p {
+    font-size: 3em;
+  }
 }

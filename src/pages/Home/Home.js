@@ -3,7 +3,7 @@ import {Footer} from '../Footer'
 import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 import { RiContactsLine } from 'react-icons/ri';
 import { FiTwitter } from 'react-icons/fi';
-const imageFilePath = 'public/images/cherryblossom.jpg';
+const imageFilePath = 'images/cherryblossom.jpg';
 const style = { backgroundImage: `url('${imageFilePath}')` };
 
 export function Home() {

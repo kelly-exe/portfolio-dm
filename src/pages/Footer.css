@@ -10,12 +10,17 @@
 }
 
 .resource {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 70%;
   height: 70%;
   place-self: center;
-  border: 6px solid rgb(238, 230, 233);
+  border: 6px outset rgb(238, 230, 233);
   color: rgb(77, 46, 61);
   filter: drop-shadow(3px 3px 4px rgb(189, 120, 154));
+  border-right-color: #ebd6dfad;
+  border-bottom-color: #ebd6dfad;
   border-radius: 40px;
   grid-column-start: 2;
   grid-column-end: 4;
@@ -28,20 +33,53 @@
 }
 
 .resource h1 {
-  padding: 5% 0 0 0;
-  margin: 5px 0 0 0;
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 
 .resource p {
-  font-size: 6em;
+  font-size: 5.2em;
   margin: 0;
-  
 }
 
 .resource:hover {
-    backdrop-filter: saturate(3) brightness(.9);
-    transition-duration: 500ms;
-    color: rgb(253, 235, 242);
-    border-color: rgb(241, 223, 229);
+  backdrop-filter: saturate(3) brightness(0.9);
+  transition-duration: 500ms;
+  color: rgb(253, 235, 242);
+  border-color: rgb(255, 255, 255);
+  border-right-color: #faedf3f5;
+  border-bottom-color: #faedf3f5;
+}
+
+@media screen and (max-width: 630px) {
+  .self-resources {
+    top: 15%;
+  }
+  .resource {
+    margin: 0;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 6;
+  }
+  .resource p {
+    display: none;
+  }
+  .resource h1 {
+    font-size: 2em;
+    margin: 0 0;
+    padding: 20 10;
+  }
+  .resource:nth-child(2) {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 6;
+  }
+}
+
+@media screen and (min-width: 1700px){
+  .resource h1 {
+    font-size: 4em;
+  }
+
 }
