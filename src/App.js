@@ -14,7 +14,6 @@ function App() {
         <Route path="/about" element={<AboutMe />} />
       </Routes>  
         
-      <Footer />
 
     </div>
   );

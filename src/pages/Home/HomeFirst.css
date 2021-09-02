@@ -1,0 +1,85 @@
+.background-image img {
+  display: grid;
+  position: absolute;
+  top: 60px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+
+  width: 100%;
+  height: 90%;
+}
+
+.content {
+  display: flex;
+  position: absolute;
+  height: 60%;
+  width: 70%;
+  margin: 10% 15% 10% 15%;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0px 1px 20px brown;
+  justify-content: center;
+}
+.homeBase h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "ABeeZee", sans-serif;
+}
+p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.homeBase .image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 1024px) {
+  .homeBase h1 {
+    font-size: 60px;
+  }
+  .homeBase p {
+    font-size: 25px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 709px) {
+  .content {
+    width: 90%;
+    height: 60%;
+    margin-left: 30px;
+  }
+  .homeBase h1 {
+    font-size: 30px;
+    top: 30%;
+    left: 50%;
+  }
+  .homeBase p {
+    font-size: 20px;
+    top: 20%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .content {
+    width: 100%;
+    height: 5%;
+    height: 60%;
+  }
+  .homeBase h1 {
+    font-size: 15px;
+    top: 50%;
+    left: 50%;
+  }
+  .homeBase p {
+    font-size: 10px;
+    top: 40%;
+  }
+}

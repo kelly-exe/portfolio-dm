@@ -1,0 +1,83 @@
+.body-div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  font-family: "ABeeZee", sans-serif;
+}
+
+.icons {
+  backdrop-filter: blur(10px);
+  display: grid;
+  margin-left: 40%;
+  padding: 0 0.5% 0 0;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: span 5;
+  text-align: right;
+  background-color: rgba(255, 21, 138, 0.267);
+  border-radius: 50px 0 0 50px;
+  filter: drop-shadow(-7px 8px 8px rgb(189, 120, 154));
+  box-shadow: rgb(239 198 217) 3px 0px 6px 0px inset,
+    rgba(105, 67, 83, 0.5) -3px 0px 6px 1px inset;
+  z-index: 2;
+}
+.icons p {
+  filter: drop-shadow(-4px 3px 4px rgb(70, 20, 47));
+  color: white;
+  place-self: center;
+  font-size: 2em;
+  text-align: center;
+  padding: 0 10px 0 20px;
+  margin: 0;
+  height: fit-content;
+}
+
+.icons p:hover {
+  color: rgba(92, 20, 65, 0.658);
+  filter: drop-shadow(-5px 3px 4px rgb(255, 231, 243));
+  transition-duration: 500ms;
+}
+
+.homeBase {
+  position: absolute;
+  top: 60px;
+  display: grid;
+  grid-template-columns: .5fr 2fr .25fr 2fr .25fr;
+  grid-template-rows: repeat(8, 1fr);
+
+  width: 100%;
+  height: fit-content;
+}
+
+.content {
+  font-size: 1.5em;
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: 2;
+  grid-row-end: span 5;
+  backdrop-filter: blur(7px);
+  border-radius: 0 70px 70px 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.7) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.63) 0px -2px 6px 0px inset;
+}
+
+.content h1 {
+  line-height: 2.2em;
+  padding-left: 2%;
+  font-size: 2em;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.content p {
+  padding-left: 3%;
+  font-size: 1em;
+  text-align: left;
+  margin-top: 0;
+}
