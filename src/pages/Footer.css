@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(8, 1fr);
-
+  min-height: 650px;
   width: 100%;
   height: fit-content;
 }
@@ -53,6 +53,7 @@
 @media screen and (max-width: 630px) {
   .self-resources {
     top: 15%;
+    min-height: 700px;
   }
   .resource {
     margin: 0;

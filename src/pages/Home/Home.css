@@ -1,4 +1,5 @@
 .body-div {
+  overflow-y: scroll;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -7,6 +8,7 @@
   top: 0;
   font-family: "ABeeZee", sans-serif;
 }
+.body-div::-webkit-scrollbar { width: 0 !important }
 
 .icons {
   backdrop-filter: blur(10px);
@@ -42,6 +44,7 @@
 }
 
 .homeBase {
+  min-height: 700px;
   position: absolute;
   top: 60px;
   display: grid;
