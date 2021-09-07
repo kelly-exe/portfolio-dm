@@ -19,6 +19,7 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: span 5;
+  align-content: space-evenly;
   background-color: rgba(255, 21, 138, 0.267);
   border-radius: 50px 0 0 50px;
   filter: drop-shadow(-7px 8px 8px rgb(189, 120, 154));
@@ -26,7 +27,7 @@
     rgba(105, 67, 83, 0.5) -3px 0px 6px 1px inset;
   z-index: 2;
 }
-.icons p {
+.icons p a{
   filter: drop-shadow(2px 1px 4px rgb(70, 20, 47));
   color: white;
   place-self: center;
@@ -37,7 +38,7 @@
   height: fit-content;
 }
 
-.icons p:hover {
+.icons a:hover {
   color: rgba(92, 20, 65, 0.658);
   filter: drop-shadow(-5px 1px 4px rgb(255, 231, 243));
   transition-duration: 500ms;
@@ -119,7 +120,7 @@
     box-shadow: rgb(162 99 129) 3px 0px 6px 0px inset,
       rgb(105 67 83 / 22%) -3px 0px 6px 1px inset;
   }
-  .icons p {
+  .icons p{
     padding: 0;
     margin-top: 2%;
   }
@@ -132,7 +133,7 @@
   .content p {
     font-size: 2em;
   }
-  .icons p {
+  .icons p a{
     font-size: 3em;
   }
 }

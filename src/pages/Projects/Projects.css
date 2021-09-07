@@ -1,0 +1,81 @@
+.projects-container {
+  display: grid;
+  grid-template-rows: repeat(4, 300px);
+  /* grid-template-columns: repeat(2, 1fr); */
+  position: absolute;
+  top: 900px;
+  width: 85%;
+
+  left: 10%;
+  right: 15%;
+  grid-auto-flow: column;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.7) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.63) 0px -2px 6px 0px inset;
+}
+
+.project {
+  display: flex;
+  padding: 50px 30px 0 30px;
+}
+/* .project:nth-child(1){
+    padding-top: 30px;
+} */
+.project img {
+  height: 50%;
+  width: 380px;
+}
+
+.project-text {
+  text-align: left;
+  margin-left: 30px;
+}
+.project-text h1 {
+  font-size: 2em;
+}
+.project-text p {
+  overflow-wrap: break-word;
+  width: fit-content;
+  height: auto;
+  margin-left: 5%;
+  font-size: 1.5em;
+}
+
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(223, 87, 150, 0.75);
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(223, 87, 150, 0.75);
+  }
+}
+.hvr-back-pulse {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-back-pulse:hover,
+.hvr-back-pulse:focus,
+.hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #dbbcd294;
+  background-color: #dbbcd294;
+  color: white;
+}

@@ -1,18 +1,21 @@
 import './Footer.css';
 import { IoCodeWorking } from 'react-icons/io5';
-import {CgFileDocument } from 'react-icons/cg';
+import { CgFileDocument } from 'react-icons/cg';
 
 export function Footer() {
     return (
         <>
             <div className="self-resources">
                 <div className="resource">
-                    <h1>Projects</h1>
-                    <p><IoCodeWorking /></p>
+                    <a href="#projects-id">
+                        <h1>Projects</h1>
+                        <p><IoCodeWorking /></p>
+                    </a>
                 </div>
                 <div className="resource">
-                    <h1>Resume</h1>
-                    <p><CgFileDocument /></p>
+                    <a href="#"> <h1>Resume</h1>
+                        <p><CgFileDocument /></p>
+                    </a>
                 </div>
             </div>
 

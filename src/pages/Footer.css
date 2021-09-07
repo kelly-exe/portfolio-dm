@@ -10,6 +10,7 @@
 }
 
 .resource {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +18,6 @@
   height: 70%;
   place-self: center;
   border: 6px outset rgb(238, 230, 233);
-  color: rgb(77, 46, 61);
   filter: drop-shadow(3px 3px 4px rgb(189, 120, 154));
   border-right-color: #ebd6dfad;
   border-bottom-color: #ebd6dfad;
@@ -32,8 +32,13 @@
   grid-column-end: 6;
 }
 
+.resource a {
+  text-decoration: none;
+  color: rgb(77, 46, 61);
+}
 .resource h1 {
   font-size: 2.2em;
+  margin-bottom: 0;
 }
 
 .resource p {
@@ -41,7 +46,7 @@
   margin: 0;
 }
 
-.resource:hover {
+.resource:hover, .resource a:hover{
   backdrop-filter: saturate(3) brightness(0.9);
   transition-duration: 500ms;
   color: rgb(253, 235, 242);
@@ -78,9 +83,8 @@
   }
 }
 
-@media screen and (min-width: 1700px){
+@media screen and (min-width: 1700px) {
   .resource h1 {
     font-size: 4em;
   }
-
 }
