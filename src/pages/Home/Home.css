@@ -122,7 +122,8 @@
   }
   .icons p{
     padding: 0;
-    margin-top: 2%;
+    padding-top: 1%;
+    align-self: center;
   }
 }
 
