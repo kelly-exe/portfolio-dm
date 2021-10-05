@@ -58,8 +58,8 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   overflow: hidden;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 3s;
+  transition-duration: 3s;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
 }
@@ -69,15 +69,15 @@
   -webkit-animation-name: hvr-back-pulse;
   animation-name: hvr-back-pulse;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  animation-duration: 3s;
   -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  animation-delay: .5s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  background-color: #dbbcd294;
-  background-color: #dbbcd294;
+  background-color: #e6b0c5d0;
+  background-color: #e6b0c5d0;
   color: white;
 }
 

@@ -7,6 +7,7 @@
   position: fixed;
   top: 0;
   font-family: "ABeeZee", sans-serif;
+  background-color: rgb(255, 213, 220);
 }
 .body-div::-webkit-scrollbar { width: 0 !important }
 

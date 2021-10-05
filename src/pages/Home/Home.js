@@ -5,7 +5,7 @@ import { projectOne, projectTwo } from '../Projects/ProjectData.js';
 import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 import { RiContactsLine } from 'react-icons/ri';
 import { FiTwitter } from 'react-icons/fi';
-const imageFilePath = 'images/cherryblossom.jpg';
+const imageFilePath = 'images/cherryblossoms.jpg';
 const style = { backgroundImage: `url('${imageFilePath}')` };
 
 export function Home() {

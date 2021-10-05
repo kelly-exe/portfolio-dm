@@ -1,6 +1,6 @@
 {
-  "homepage":"http://kelly-exe.github.io/portfolio-dm",
   "name": "portfolio-dm",
+  "homepage":"https://kelly-exe.github.io/portfolio-dm",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
