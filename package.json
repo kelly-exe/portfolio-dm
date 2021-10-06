@@ -1,8 +1,8 @@
 {
   "name": "portfolio-dm",
-  "homepage":"https://kelly-exe.github.io/portfolio-dm",
+  "homepage":"http://kelly-exe.github.io/portfolio-dm",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

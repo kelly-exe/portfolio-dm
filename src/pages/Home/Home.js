@@ -1,12 +1,11 @@
 import './Home.css';
 import { Footer } from '../Footer';
 import { Projects } from '../Projects/Projects.js';
-import { projectOne, projectTwo } from '../Projects/ProjectData.js';
 import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 import { RiContactsLine } from 'react-icons/ri';
 import { FiTwitter } from 'react-icons/fi';
-const imageFilePath = 'images/cherryblossoms.jpg';
-const style = { backgroundImage: `url('${imageFilePath}')` };
+const imageFilePath = 'https://images.unsplash.com/photo-1519882189396-71f93cb4714b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80';
+const style = { backgroundImage: `url('${imageFilePath}')`,backgroundRepeat: 'no-repeat', width: '100%', height: '100%', color: 'white' };
 
 export function Home() {
     return (

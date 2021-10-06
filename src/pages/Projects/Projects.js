@@ -1,4 +1,4 @@
-import { projectOne, projectTwo } from './ProjectData.js';
+import { projectOne, projectTwo, projectThree, projectFour } from './ProjectData.js';
 import './Projects.css';
 
 export function Projects() {
@@ -20,10 +20,18 @@ export function Projects() {
                 </div>
             </div>
             <div className="project hvr-back-pulse">
-                <img src={projectTwo.image} />
+                <img src={projectThree.image} />
                 <div className="project-text">
-                    <h1>{projectTwo.name}</h1>
-                    <p>{projectTwo.description}</p>
+                    <h1>{projectThree.name}</h1>
+                    <p>{projectThree.description}</p>
+
+                </div>
+            </div>
+            <div className="project hvr-back-pulse">
+                <img src={projectFour.image} />
+                <div className="project-text">
+                    <h1>{projectFour.name}</h1>
+                    <p>{projectFour.description}</p>
 
                 </div>
             </div>

@@ -23,14 +23,17 @@
     padding-top: 30px;
 } */
 .project img {
-  height: 50%;
+  height: 70%;
   width: 380px;
   align-self: center;
+  border-radius: 30px;
+  
 }
 
 .project-text {
   text-align: left;
   margin-left: 30px;
+  color:rgb(78, 36, 56)
 }
 .project-text h1 {
   font-size: 2em;
@@ -94,7 +97,7 @@
     margin-right: 20px;
   }
   .project-img {
-    width: 280;
+    width: 280px;
     height: 40%;
   }
   .project p {
