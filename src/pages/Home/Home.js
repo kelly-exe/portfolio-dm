@@ -10,7 +10,7 @@ const style = { backgroundImage: `url('${imageFilePath}')`,backgroundRepeat: 'no
 export function Home() {
     return (
         <div className="body-div" style={style}>
-            <div className="homeBase" >
+            <div className="homeBase" id="home-id">
                 <div className="icons">
                     <p><a href="https://www.linkedin.com/in/dm8/" target="_blank"> <AiOutlineLinkedin /> </a> </p>
                     <p><a href="https://github.com/kelly-exe" target="_blank"> <AiOutlineGithub /> </a> </p>
