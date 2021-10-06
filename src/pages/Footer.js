@@ -13,7 +13,7 @@ export function Footer() {
                     </a>
                 </div>
                 <div className="resource">
-                    <a href="#"> <h1>Resume</h1>
+                    <a href="https://pdfhost.io/v/lT0~lCLQI_ResumeDorkelisMoreno105" target="_blank"> <h1>Resume</h1>
                         <p><CgFileDocument /></p>
                     </a>
                 </div>

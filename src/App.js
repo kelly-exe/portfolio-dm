@@ -9,7 +9,7 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/portfolio-dm" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
       </Routes>  
         

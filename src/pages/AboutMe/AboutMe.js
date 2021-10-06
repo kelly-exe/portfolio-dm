@@ -21,8 +21,8 @@ export function AboutMe() {
                     <p>After having graduated with an Associates of Science in Computer
                         Science I have become interested in Web Development. <br /> <br />
                         I have learned JavaScript, HTML5, CSS, and React so far and I continue to
-                        learn more of these every day. <br /><br />
-                        Though I have been focused on Web Development recently
+                        learn more about languages and frameworks used in Web Development every day. <br /><br />
+                        Though I have been focused on Web Development recently, I
                         am excited to learn more in any area of programming and find a way to use these new skills in
                         a professional environment.
                     </p>

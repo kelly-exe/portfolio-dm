@@ -78,14 +78,15 @@
   width: 100%;
   margin-bottom: 0;
   color: rgb(70 20 47);
-  text-shadow: -2px -2px #b58dab91;
+  text-shadow: 2px 2px #b58dab91;
 }
 
 .content p {
-  padding: 20px 3% 0 3%;
+  padding: 10px 3% 3% 3%;
   font-size: 1em;
   text-align: left;
   margin-top: 0;
+  text-shadow: 1px 1.5px #b58dab91;
 }
 
 @media screen and (max-width: 630px) {
@@ -102,8 +103,8 @@
     padding: 0;
   }
   .content p {
-    font-size: 0.8em;
-    text-align: center;
+    text-align: left;
+    font-size: 0.7em;
     padding-top: 20px;
     margin-bottom: 0;
   }
